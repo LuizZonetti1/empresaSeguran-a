@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="400" height="300">
+  <!-- Fundo gradiente -->
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1a1a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#333333;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="goldGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#DAA520;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#B8860B;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <rect width="400" height="300" fill="url(#bgGradient)"/>
+  
+  <!-- Câmeras de segurança -->
+  <g transform="translate(100, 80)">
+    <!-- Câmera principal -->
+    <rect x="0" y="20" width="40" height="25" fill="url(#goldGradient)" rx="5"/>
+    <circle cx="20" cy="32" r="12" fill="#000000"/>
+    <circle cx="20" cy="32" r="8" fill="url(#goldGradient)"/>
+    <circle cx="20" cy="32" r="4" fill="#000000"/>
+    <!-- Suporte -->
+    <rect x="18" y="45" width="4" height="15" fill="#666666"/>
+    <rect x="10" y="58" width="20" height="8" fill="#666666" rx="4"/>
+  </g>
+  
+  <!-- Monitor central -->
+  <g transform="translate(180, 70)">
+    <rect x="0" y="0" width="80" height="60" fill="#000000" stroke="url(#goldGradient)" stroke-width="3" rx="5"/>
+    <rect x="5" y="5" width="70" height="45" fill="#1a1a1a"/>
+    <!-- Tela com grade de monitoramento -->
+    <g fill="url(#goldGradient)" opacity="0.8">
+      <rect x="10" y="10" width="30" height="18" stroke="#DAA520" stroke-width="1" fill="none"/>
+      <rect x="45" y="10" width="30" height="18" stroke="#DAA520" stroke-width="1" fill="none"/>
+      <rect x="10" y="32" width="30" height="18" stroke="#DAA520" stroke-width="1" fill="none"/>
+      <rect x="45" y="32" width="30" height="18" stroke="#DAA520" stroke-width="1" fill="none"/>
+    </g>
+    <!-- Base do monitor -->
+    <rect x="35" y="60" width="10" height="15" fill="#666666"/>
+    <rect x="25" y="73" width="30" height="5" fill="#666666" rx="2"/>
+  </g>
+  
+  <!-- Câmera lateral -->
+  <g transform="translate(300, 85)">
+    <rect x="0" y="15" width="35" height="20" fill="url(#goldGradient)" rx="4"/>
+    <circle cx="17" cy="25" r="10" fill="#000000"/>
+    <circle cx="17" cy="25" r="6" fill="url(#goldGradient)"/>
+    <circle cx="17" cy="25" r="3" fill="#000000"/>
+    <!-- Suporte giratório -->
+    <rect x="15" y="35" width="4" height="12" fill="#666666"/>
+  </g>
+  
+  <!-- Elementos de conectividade -->
+  <g stroke="url(#goldGradient)" stroke-width="2" fill="none" opacity="0.6">
+    <!-- Linhas conectando as câmeras ao monitor -->
+    <path d="M140 95 Q160 85, 180 85"/>
+    <path d="M300 95 Q280 85, 260 85"/>
+  </g>
+  
+  <!-- Ícones de status -->
+  <g transform="translate(50, 180)">
+    <!-- 24h -->
+    <circle cx="25" cy="25" r="20" fill="none" stroke="url(#goldGradient)" stroke-width="3"/>
+    <text x="25" y="20" font-family="Arial Black" font-size="12" fill="url(#goldGradient)" text-anchor="middle">24</text>
+    <text x="25" y="35" font-family="Arial" font-size="8" fill="url(#goldGradient)" text-anchor="middle">HRS</text>
+  </g>
+  
+  <g transform="translate(150, 180)">
+    <!-- Sinal WiFi -->
+    <path d="M25 35 Q15 25, 5 35 M25 35 Q20 30, 15 35 M25 35 Q22 32, 20 35" 
+          stroke="url(#goldGradient)" stroke-width="2" fill="none"/>
+    <circle cx="25" cy="35" r="2" fill="url(#goldGradient)"/>
+  </g>
+  
+  <g transform="translate(250, 180)">
+    <!-- Escudo de segurança -->
+    <path d="M25 10 Q15 10, 10 20 L10 35 Q15 45, 25 40 Q35 45, 40 35 L40 20 Q35 10, 25 10" 
+          fill="url(#goldGradient)" stroke="#DAA520" stroke-width="1"/>
+    <path d="M25 15 L30 25 L25 35 L20 25 Z" fill="#000000"/>
+  </g>
+  
+  <g transform="translate(320, 180)">
+    <!-- Alerta/Alarme -->
+    <circle cx="25" cy="25" r="15" fill="none" stroke="url(#goldGradient)" stroke-width="3"/>
+    <path d="M25 15 L30 35 L20 35 Z" fill="url(#goldGradient)"/>
+    <circle cx="25" cy="38" r="2" fill="url(#goldGradient)"/>
+  </g>
+  
+  <!-- Texto principal -->
+  <text x="200" y="270" font-family="Arial Black" font-size="18" fill="url(#goldGradient)" text-anchor="middle">MONITORAMENTO 24H</text>
+</svg>

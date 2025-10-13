@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="segurança, segurança patrimonial, vigilância, proteção, empresa de segurança">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="icon" href="./assets/Uniforce vetor logo.pdf (2).png" type="image/svg+xml">
+    <link rel="stylesheet" href="./styles.css">
+    <title>UNIFORCE SEGURANÇA</title>
+</head>
+
+<body>
+
+    <header>
+        <a href="#" class="logo-link">
+            <img src="./assets/Uniforce vetor logo.pdf (2).png" alt="Logo-UNIFORCE-SEGURANÇA" class="logo-header">
+        </a>
+        <nav>
+            <a href="#empresa-info">Sobre Nós</a>
+            <a href="#nossos-servicos">Serviços</a>
+            <a href="#certificacoes">Certificações</a>
+            <a href="#clientes">Clientes</a>
+            <a href="#comentarios">Comentários</a>
+            <a href="#localizacao">Localização</a>
+            <a href="#footer">Contato</a>
+        </nav>
+    </header>
+
+    <!-- Seção Hero com Logo e Contatos -->
+    <section class="hero-section">
+        <div class="hero-content">
+            <div class="hero-logo">
+                <img src="./assets/Uniforce vetor logo.pdf (2).png" alt="UNIFORCE SEGURANÇA" class="logo-hero">
+                <h1>UNIFORCE SEGURANÇA</h1>
+                <p class="hero-slogan">Nosso objetivo é sua segurança</p>
+            </div>
+            
+            <div class="hero-contacts">
+                <a href="https://wa.me/5544999086712?text=Olá!%20Gostaria%20de%20solicitar%20um%20orçamento%20para%20serviços%20de%20segurança." target="_blank" class="contact-card-link">
+                    <div class="contact-card">
+                        <div class="contact-icon">📞</div>
+                        <div class="contact-info">
+                            <h3>Orçamentos</h3>
+                            <span>(44) 99908-6712</span>
+                        </div>
+                    </div>
+                </a>
+                
+                <a href="https://wa.me/554474001539?text=Emergência%20-%20Preciso%20de%20atendimento%20imediato!" target="_blank" class="contact-card-link">
+                    <div class="contact-card">
+                        <div class="contact-icon">🚨</div>
+                        <div class="contact-info">
+                            <h3>Emergência 24h</h3>
+                            <span>(44) 7400-1539</span>
+                        </div>
+                    </div>
+                </a>
+                
+                <a href="#localizacao" class="contact-card-link">
+                    <div class="contact-card">
+                        <div class="contact-icon">📍</div>
+                        <div class="contact-info">
+                            <h3>Localização</h3>
+                            <span>Zona 7 - Maringá-PR</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <main>
+        <div class="empresa-info" id="empresa-info">
+            <div class="SobreNos">
+                <div class="texto-sobre">
+                    <h2>Sobre Nós</h2>
+                    <p>A UNIFORCE SEGURANÇA LTDA é uma empresa especializada em serviços de segurança patrimonial, 
+                        oferecendo soluções completas e personalizadas para proteger seu patrimônio. Com uma equipe 
+                        altamente qualificada e treinada, atendemos diversos segmentos do mercado, desde estabelecimentos 
+                        comerciais até condomínios residenciais de alto padrão.
+                        <br><br>
+                        Nossa missão é proporcionar tranquilidade e proteção aos nossos clientes através de serviços 
+                        de excelência, utilizando tecnologia de ponta e profissionais capacitados. Conte conosco para 
+                        garantir a segurança que você e sua empresa merecem.
+                        <br><br>
+                    </p>
+                </div>
+                <div class="imagem-sobre">
+                    <img src="./assets/evento-banco-safra-a2-seguranca-equipe.jpeg"
+                        alt="Equipe da empresa de segurança">
+                </div>
+            </div>
+        </div>
+
+        <div class="nossos-servicos" id="nossos-servicos">
+            <h2>Nossos Serviços</h2>
+            <div class="cards">
+                <div class="card" onclick="abrirModal('modal-monitoramento')" role="button" tabindex="0">
+                    <img src="./assets/monitoramento.webp" alt="Monitoramento-24hrs">
+                    <h3>Monitoramento 24hrs</h3>
+                    <p>Sistema completo de monitoramento com câmeras e alarmes conectados 24 horas por dia.</p>
+                    <button onclick="event.stopPropagation(); abrirModal('modal-monitoramento')">Saiba Mais</button>
+                </div>
+                <div class="card" onclick="abrirModal('modal-zeladoria')" role="button" tabindex="0">
+                    <img src="./assets/servico-zeladoria.jpg" alt="Zeladoria">
+                    <h3>Zeladoria</h3>
+                    <p>Serviços completos de zeladoria para condomínios e empresas com equipe qualificada.</p>
+                    <button onclick="event.stopPropagation(); abrirModal('modal-zeladoria')">Saiba Mais</button>
+                </div>
+                <div class="card" onclick="abrirModal('modal-automacao')" role="button" tabindex="0">
+                    <img src="./assets/automatização.jpg" alt="Automatização">
+                    <h3>Automatização</h3>
+                    <p>Soluções inteligentes de automatização para condomínios e empresas.</p>
+                    <button onclick="event.stopPropagation(); abrirModal('modal-automacao')">Saiba Mais</button>
+                </div>
+                <div class="card" onclick="abrirModal('modal-portaria')" role="button" tabindex="0">
+                    <img src="./assets/portaria remota.jpeg" alt="Portaria-Remota">
+                    <h3>Portaria Remota</h3>
+                    <p>Sistema inovador de portaria remota com controle de acesso à distância 24 horas.</p>
+                    <button onclick="event.stopPropagation(); abrirModal('modal-portaria')">Saiba Mais</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Seção de Certificações -->
+        <div class="certificacoes" id="certificacoes">
+            <h2>Nossas Certificações</h2>
+            <div class="certificacoes-container">
+                <div class="certificacao-item">
+                    <img src="./assets/iso-certificacao.png" alt="Certificação-ISO">
+                    <h3>ISO 9001:2015</h3>
+                    <p>Sistema de Gestão da Qualidade</p>
+                </div>
+                <div class="certificacao-item">
+                    <img src="./assets/pf-certificacao.png" alt="Certificação-Polícia-Federal">
+                    <h3>Autorização PF</h3>
+                    <p>Polícia Federal - Segurança Privada</p>
+                </div>
+                <div class="certificacao-item">
+                    <img src="./assets/sesvesp-logo.png" alt="SESVESP">
+                    <h3>SESVESP</h3>
+                    <p>Sindicato das Empresas de Segurança de SP</p>
+                </div>
+                <div class="certificacao-item">
+                    <img src="./assets/abese-logo.png" alt="ABESE">
+                    <h3>ABESE</h3>
+                    <p>Associação Brasileira das Empresas de Segurança Eletrônica</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Seção de Clientes -->
+        <div class="clientes" id="clientes">
+            <h2>Nossos Clientes</h2>
+            <p class="clientes-subtitle">Confiança conquistada através de serviços de excelência</p>
+            <div class="clientes-grid">
+                <div class="cliente-card">
+                    <img src="./assets/cropped-Lajeresk.jpeg" alt="Lajeresk">
+                    <h3>Lajeresk</h3>
+                    <p>Segurança especializada para estabelecimentos comerciais</p>
+                </div>
+                <div class="cliente-card">
+                    <img src="./assets/meu-chef.jpeg" alt="Meu-Chefe-Lanches">
+                    <h3>Meu Chefe Lanches</h3>
+                    <p>Proteção e segurança para rede de lanchonetes</p>
+                </div>
+                <div class="cliente-card">
+                    <img src="./assets/volkswagem-caminhoes.png" alt="Volkgagem-Caminhões">
+                    <h3>Volkgagem Caminhões</h3>
+                    <p>Segurança patrimonial para frota e instalações</p>
+                </div>
+                <div class="cliente-card">
+                    <img src="./assets/igui-piscina.jpeg" alt="IGUI-Piscina">
+                    <h3>IGUI Piscina</h3>
+                    <p>Vigilância para showroom e área de vendas</p>
+                </div>
+                <div class="cliente-card">
+                    <img src="./assets/eletroinga.jpeg" alt="Elétro-Ingá">
+                    <h3>Elétro Ingá</h3>
+                    <p>Segurança para loja de eletrodomésticos</p>
+                </div>
+                <div class="cliente-card">
+                    <img src="./assets/graneleiro-logo.png" alt="Graneleiro-Caminhões">
+                    <h3>Graneleiro Caminhões</h3>
+                    <p>Proteção de pátio e veículos pesados</p>
+                </div>
+                <div class="cliente-card">
+                    <img src="./assets/frota-brasil.png" alt="Frota-Brasil">
+                    <h3>Frota Brasil</h3>
+                    <p>Segurança especializada em transportadoras</p>
+                </div>
+                <div class="cliente-card">
+                    <img src="./assets/royal-garden.png" alt="Condomínio-Royal-Garden">
+                    <h3>Condomínio Royal Garden</h3>
+                    <p>Portaria e segurança residencial de alto padrão</p>
+                </div>
+                <div class="cliente-card">
+                    <img src="./assets/sesi.jpg" alt="SESI-Maringá">
+                    <h3>SESI Maringá</h3>
+                    <p>Segurança para instituição de ensino e saúde</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="localizacao" id="localizacao">
+            <h2>Nossa Localização</h2>
+
+            <div class="map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3661.2026414804122!2d-51.93731185380456!3d-23.417045950074968!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ecd0d539e95043%3A0x4a53760b88d655ce!2sAv.%20Jo%C3%A3o%20Paulino%20Vieira%20Filho%2C%20305%20-%20Zona%207%2C%20Maring%C3%A1%20-%20PR%2C%2087020-015!5e0!3m2!1spt-BR!2sbr!4v1760311124685!5m2!1spt-BR!2sbr"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                
+                <div class="localizacao-info">
+                    <div class="info-principal">
+                        <h3>🏢 Localização Estratégica</h3>
+                        <p>Estamos estrategicamente posicionados na <strong>Zona 7</strong>, uma das regiões mais centrais e acessíveis de Maringá-PR. Nossa localização privilegiada nos permite atender com agilidade e eficiência toda a região metropolitana de Maringá e o noroeste do Paraná.</p>
+                        
+                        <div class="endereco-completo">
+                            <h4>📍 Nosso Endereço</h4>
+                            <div class="endereco-detalhes">
+                                <p><strong>Av. João Paulino Vieira Filho, 305</strong></p>
+                                <p>Zona 7 - Maringá - PR</p>
+                                <p>CEP: 87020-015</p>
+                                <p><strong>UNIFORCE SEGURANÇA LTDA</strong></p>
+                                <p>CNPJ: 54.421.279/0001-06</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="vantagens-localizacao">
+                        <h4>🎯 Vantagens da Nossa Localização</h4>
+                        <ul>
+                            <li>✅ Fácil acesso por todas as principais vias da cidade</li>
+                            <li>✅ Proximidade com centros empresariais e comerciais</li>
+                            <li>✅ Tempo de resposta otimizado para emergências</li>
+                            <li>✅ Cobertura completa da região metropolitana</li>
+                            <li>✅ Estacionamento disponível para visitantes</li>
+                            <li>✅ Atendimento presencial em horário comercial</li>
+                        </ul>
+                        
+                        <div class="horario-atendimento">
+                            <h5>🕒 Horário de Atendimento</h5>
+                            <p><strong>Segunda a Sexta:</strong> 08h às 18h</p>
+                            <p><strong>Emergências:</strong> 24 horas por dia</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="comentarios" id="comentarios">
+            <h2>Comentários</h2>
+            <div class="card-comentario">
+                <img src="https://avatar.iran.liara.run/username?username=j+s" alt="">
+                <span>- João S.</span>
+                <p>"Excelente serviço! Me sinto muito mais seguro com a equipe da empresa."</p>
+            </div>
+            <div class="card-comentario">
+                <img src="https://avatar.iran.liara.run/username?username=m+l" alt="">
+                <span>- Maria L.</span>
+                <p>"Profissionais altamente capacitados e atenciosos. Recomendo a todos!"</p>
+            </div>
+            <div class="card-comentario">
+                <img src="https://avatar.iran.liara.run/username?username=c+m" alt="">
+                <span>- Carlos M.</span>
+                <p>"A empresa superou minhas expectativas. Serviço de qualidade e confiança."</p>
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="footer" id="footer">
+        <div class="empresa-info">
+            <div class="footer-logo-section">
+                <div class="footer-logo-container">
+                    <img src="./assets/Uniforce vetor logo.pdf (2).png" alt="Logo UNIFORCE SEGURANÇA" class="logo-footer">
+                </div>
+                <div class="footer-text-content">
+                    <h3>UNIFORCE SEGURANÇA LTDA</h3>
+                    <div class="footer-empresa-details">
+                        <p>&copy; 2024 UNIFORCE SEGURANÇA LTDA.</p>
+                        <p><strong>CNPJ:</strong> 54.421.279/0001-06</p>
+                        <p><strong>Endereço:</strong> Av. João Paulino Vieira Filho, 305</p>
+                        <p>Zona 7, Maringá - PR, CEP 87020-015</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="contato">
+            <p><strong>Contatos:</strong></p>
+            <a href="https://wa.me/5544999086712" target="_blank">
+                <img src="./assets/whatsapp-icon.svg" alt="WhatsApp" class="social-icon"> 
+                Orçamentos: (44) 99908-6712
+            </a>
+            <a href="https://wa.me/554474001539" target="_blank">
+                <img src="./assets/whatsapp-icon.svg" alt="WhatsApp" class="social-icon"> 
+                Emergência 24h: (44) 7400-1539
+            </a>
+            <!--<a href="mailto:contato@uniforce.com.br" target="_blank">
+                <img src="./assets/email-icon.svg" alt="Email" class="social-icon"> 
+                contato@uniforce.com.br
+            </a>-->
+            <a href="https://www.instagram.com/uniforce_seguranca?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">
+                <img src="./assets/instagram-icon.svg" alt="Instagram" class="social-icon"> 
+                @uniforce_seguranca
+            </a>
+        </div>
+    </footer>
+
+    <!-- Botão Flutuante WhatsApp -->
+    <a href="https://wa.me/5544999086712?text=Olá!%20Gostaria%20de%20solicitar%20um%20orçamento%20para%20serviços%20de%20segurança."
+        class="whatsapp-float" target="_blank" title="Solicite seu orçamento no WhatsApp">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+            <path
+                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.89 3.488" />
+        </svg>
+    </a>
+
+    <!-- Modais dos Serviços -->
+    <div id="modal-monitoramento" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="fecharModal('modal-monitoramento')">&times;</span>
+            <h2>🎥 Monitoramento 24hrs - Câmera e Alarme</h2>
+            <div class="modal-body">
+                <p><strong>Central de Monitoramento Própria:</strong> Nossa central opera 24 horas por dia, 7 dias por semana, 
+                com profissionais especializados em segurança eletrônica. Sistema integrado de câmeras de alta definição e 
+                sensores de alarme para detecção imediata de qualquer movimento suspeito.</p>
+                
+                <h3>Recursos Inclusos:</h3>
+                <ul>
+                    <li>Câmeras IP de alta resolução com visão noturna</li>
+                    <li>Sensores de movimento e abertura</li>
+                    <li>Sirenes e dispositivos de alerta</li>
+                    <li>Aplicativo móvel para acompanhamento em tempo real</li>
+                    <li>Gravação em nuvem e backup local</li>
+                    <li>Resposta rápida em caso de emergência</li>
+                </ul>
+                
+                <div class="modal-footer">
+                    <a href="https://wa.me/5544999086712?text=Gostaria%20de%20saber%20mais%20sobre%20Monitoramento%2024hrs" 
+                       class="btn-whatsapp" target="_blank">Solicitar Orçamento</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-zeladoria" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="fecharModal('modal-zeladoria')">&times;</span>
+            <h2>🏢 Zeladoria Especializada</h2>
+            <div class="modal-body">
+                <p><strong>Cuidado Completo do Seu Patrimônio:</strong> Nossa equipe de zeladoria é treinada para manter 
+                suas instalações sempre em perfeitas condições, combinando limpeza, organização e pequenos reparos 
+                preventivos.</p>
+                
+                <h3>Serviços de Zeladoria:</h3>
+                <ul>
+                    <li>Limpeza e conservação de áreas comuns</li>
+                    <li>Manutenção preventiva de equipamentos</li>
+                    <li>Jardinagem e cuidado com áreas verdes</li>
+                    <li>Pequenos reparos e ajustes</li>
+                    <li>Controle de pragas e vetores</li>
+                    <li>Relatórios periódicos de manutenção</li>
+                </ul>
+                
+                <div class="modal-footer">
+                    <a href="https://wa.me/5544999086712?text=Gostaria%20de%20saber%20mais%20sobre%20Zeladoria" 
+                       class="btn-whatsapp" target="_blank">Solicitar Orçamento</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-automacao" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="fecharModal('modal-automacao')">&times;</span>
+            <h2>🤖 Automatização de Condomínio e Empresa</h2>
+            <div class="modal-body">
+                <p><strong>Tecnologia Inteligente:</strong> Transformamos seu condomínio ou empresa em um ambiente 
+                inteligente com sistemas automatizados que facilitam o dia a dia e aumentam a segurança.</p>
+                
+                <h3>Soluções de Automatização:</h3>
+                <ul>
+                    <li>Controle de acesso por cartão ou biometria</li>
+                    <li>Automatização de portões e catracas</li>
+                    <li>Sistema de interfone com vídeo</li>
+                    <li>Iluminação inteligente com sensores</li>
+                    <li>Controle de elevadores e acessos</li>
+                    <li>Integração com aplicativos móveis</li>
+                </ul>
+                
+                <div class="modal-footer">
+                    <a href="https://wa.me/5544999086712?text=Gostaria%20de%20saber%20mais%20sobre%20Automatização" 
+                       class="btn-whatsapp" target="_blank">Solicitar Orçamento</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-portaria" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="fecharModal('modal-portaria')">&times;</span>
+            <h2>📱 Portaria Remota</h2>
+            <div class="modal-body">
+                <p><strong>Inovação em Controle de Acesso:</strong> Sistema revolucionário que permite operação da portaria 
+                à distância, mantendo a mesma qualidade de atendimento com economia e eficiência.</p>
+                
+                <h3>Como Funciona a Portaria Remota:</h3>
+                <ul>
+                    <li>Atendimento por vídeo em tempo real</li>
+                    <li>Operação 24 horas por equipe especializada</li>
+                    <li>Liberação de acesso remota e segura</li>
+                    <li>Registro completo de todas as movimentações</li>
+                    <li>Comunicação direta com moradores/funcionários</li>
+                    <li>Economia de até 70% comparado à portaria presencial</li>
+                </ul>
+                
+                <div class="modal-footer">
+                    <a href="https://wa.me/5544999086712?text=Gostaria%20de%20saber%20mais%20sobre%20Portaria%20Remota" 
+                       class="btn-whatsapp" target="_blank">Solicitar Orçamento</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,109 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 225" width="400" height="225">
+  <!-- Fundo gradiente -->
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1a1a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2a2a2a;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="goldGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#DAA520;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#B8860B;stop-opacity:1" />
+    </linearGradient>
+    <radialGradient id="screenGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#d4af00;stop-opacity:0.8" />
+      <stop offset="100%" style="stop-color:#d4af00;stop-opacity:0.1" />
+    </radialGradient>
+  </defs>
+  
+  <rect width="400" height="225" fill="url(#bgGradient)"/>
+  
+  <!-- Monitor Central -->
+  <g transform="translate(150, 50)">
+    <rect x="0" y="0" width="100" height="70" fill="#000000" stroke="url(#goldGradient)" stroke-width="3" rx="8"/>
+    <rect x="5" y="5" width="90" height="55" fill="#0a0a0a"/>
+    <!-- Tela com grade de monitoramento -->
+    <rect x="10" y="10" width="40" height="25" stroke="#d4af00" stroke-width="1" fill="url(#screenGlow)" opacity="0.3"/>
+    <rect x="55" y="10" width="40" height="25" stroke="#d4af00" stroke-width="1" fill="url(#screenGlow)" opacity="0.3"/>
+    <rect x="10" y="40" width="40" height="15" stroke="#d4af00" stroke-width="1" fill="url(#screenGlow)" opacity="0.3"/>
+    <rect x="55" y="40" width="40" height="15" stroke="#d4af00" stroke-width="1" fill="url(#screenGlow)" opacity="0.3"/>
+    
+    <!-- Indicadores ativos -->
+    <circle cx="15" cy="15" r="2" fill="#00ff00" opacity="0.8"/>
+    <circle cx="60" cy="15" r="2" fill="#00ff00" opacity="0.8"/>
+    <circle cx="15" cy="45" r="2" fill="#ffff00" opacity="0.8"/>
+    <circle cx="60" cy="45" r="2" fill="#00ff00" opacity="0.8"/>
+    
+    <!-- Base do monitor -->
+    <rect x="40" y="70" width="20" height="15" fill="#444"/>
+    <rect x="25" y="83" width="50" height="8" fill="#444" rx="4"/>
+  </g>
+  
+  <!-- Câmera Esquerda -->
+  <g transform="translate(50, 70)">
+    <rect x="0" y="0" width="50" height="30" fill="url(#goldGradient)" rx="6"/>
+    <circle cx="25" cy="15" r="12" fill="#000000"/>
+    <circle cx="25" cy="15" r="8" fill="url(#goldGradient)"/>
+    <circle cx="25" cy="15" r="4" fill="#000000"/>
+    <circle cx="25" cy="15" r="2" fill="#ff0000" opacity="0.8"/>
+    <!-- Suporte -->
+    <rect x="22" y="30" width="6" height="20" fill="#666"/>
+    <rect x="10" y="48" width="30" height="10" fill="#666" rx="5"/>
+  </g>
+  
+  <!-- Câmera Direita -->
+  <g transform="translate(300, 70)">
+    <rect x="0" y="0" width="50" height="30" fill="url(#goldGradient)" rx="6"/>
+    <circle cx="25" cy="15" r="12" fill="#000000"/>
+    <circle cx="25" cy="15" r="8" fill="url(#goldGradient)"/>
+    <circle cx="25" cy="15" r="4" fill="#000000"/>
+    <circle cx="25" cy="15" r="2" fill="#ff0000" opacity="0.8"/>
+    <!-- Suporte -->
+    <rect x="22" y="30" width="6" height="20" fill="#666"/>
+    <rect x="10" y="48" width="30" height="10" fill="#666" rx="5"/>
+  </g>
+  
+  <!-- Elementos de conectividade -->
+  <g stroke="url(#goldGradient)" stroke-width="2" fill="none" opacity="0.6">
+    <path d="M100 85 Q125 75, 150 85"/>
+    <path d="M300 85 Q275 75, 250 85"/>
+    <!-- Sinais wireless -->
+    <path d="M75 40 Q65 30, 55 40 M75 40 Q70 35, 65 40 M75 40 Q72 37, 70 40"/>
+    <path d="M345 40 Q355 30, 365 40 M345 40 Q350 35, 355 40 M345 40 Q348 37, 350 40"/>
+  </g>
+  
+  <!-- Painel de Status -->
+  <g transform="translate(50, 150)">
+    <rect x="0" y="0" width="300" height="60" fill="rgba(0,0,0,0.8)" stroke="url(#goldGradient)" stroke-width="2" rx="10"/>
+    
+    <!-- Status 24h -->
+    <g transform="translate(20, 15)">
+      <circle cx="15" cy="15" r="12" fill="none" stroke="url(#goldGradient)" stroke-width="2"/>
+      <text x="15" y="12" font-family="Arial Black" font-size="8" fill="url(#goldGradient)" text-anchor="middle">24</text>
+      <text x="15" y="22" font-family="Arial" font-size="6" fill="url(#goldGradient)" text-anchor="middle">HRS</text>
+    </g>
+    
+    <!-- Ícone WiFi -->
+    <g transform="translate(80, 15)">
+      <path d="M15 25 Q5 15, -5 25 M15 25 Q10 20, 5 25 M15 25 Q12 22, 10 25" 
+            stroke="url(#goldGradient)" stroke-width="2" fill="none"/>
+      <circle cx="15" cy="25" r="2" fill="url(#goldGradient)"/>
+    </g>
+    
+    <!-- Escudo de segurança -->
+    <g transform="translate(140, 10)">
+      <path d="M15 5 Q5 5, 0 15 L0 25 Q5 35, 15 30 Q25 35, 30 25 L30 15 Q25 5, 15 5" 
+            fill="url(#goldGradient)" stroke="#DAA520" stroke-width="1"/>
+      <path d="M15 10 L20 20 L15 30 L10 20 Z" fill="#000000"/>
+    </g>
+    
+    <!-- Alerta ativo -->
+    <g transform="translate(220, 15)">
+      <circle cx="15" cy="15" r="12" fill="none" stroke="#00ff00" stroke-width="2"/>
+      <text x="15" y="19" font-family="Arial Black" font-size="8" fill="#00ff00" text-anchor="middle">ON</text>
+    </g>
+    
+    <!-- Texto Status -->
+    <text x="270" y="20" font-family="Arial" font-size="10" fill="url(#goldGradient)">SISTEMA</text>
+    <text x="270" y="35" font-family="Arial" font-size="10" fill="url(#goldGradient)">ATIVO</text>
+  </g>
+</svg>
