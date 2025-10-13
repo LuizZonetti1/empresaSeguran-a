@@ -1026,6 +1026,48 @@ footer .contato a:hover .social-icon {
         transform: translateY(-5px) scale(1.02);  /* Hover vertical em mobile */
     }
     
+    /* Melhorias específicas para seção de clientes em mobile */
+    .clientes {
+        padding: 2rem 0.5rem;  /* Reduz padding lateral para mais espaço */
+    }
+    
+    .clientes-grid {
+        grid-template-columns: 1fr;  /* Uma coluna em mobile */
+        gap: 1.5rem;
+        margin-top: 1.5rem;
+        padding: 0 0.5rem;  /* Padding lateral para centralização */
+        max-width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .cliente-card {
+        max-width: 340px;  /* Largura máxima para não ficar muito largo */
+        margin: 0 auto;    /* Centraliza o card */
+        padding: 1.5rem;   /* Padding interno ajustado */
+        border-radius: 16px;
+        box-shadow: 0 6px 25px rgba(212, 175, 0, 0.3);
+    }
+    
+    .cliente-card img {
+        width: 50px;      /* Imagem menor em mobile */
+        height: 50px;
+        margin-bottom: 0.8rem;
+    }
+    
+    .cliente-card h3 {
+        font-size: 1.1rem;  /* Título menor */
+        margin-bottom: 0.8rem;
+        color: #d4af00;
+    }
+    
+    .cliente-card p {
+        font-size: 0.85rem;  /* Texto menor */
+        line-height: 1.4;
+        color: #ffffff;
+        margin: 0;
+    }
+    
     /* Ajuste específico para telas muito pequenas */
     @media (max-width: 480px) {
         .card-comentario {
@@ -1036,6 +1078,20 @@ footer .contato a:hover .social-icon {
         .card-comentario p {
             font-size: 0.9rem;
             padding: 0 0.25rem;
+        }
+        
+        .clientes {
+            padding: 1.5rem 0.25rem;
+        }
+        
+        .clientes-grid {
+            padding: 0 0.25rem;
+            gap: 1.2rem;
+        }
+        
+        .cliente-card {
+            max-width: 320px;
+            padding: 1.2rem;
         }
     }
 }
