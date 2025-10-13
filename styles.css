@@ -758,30 +758,46 @@ footer .contato a:hover .social-icon {
         border-radius: 0 0 20px 20px;  /* Bordas arredondadas na parte inferior */
         border-bottom: 3px solid #d4af00;  /* Borda amarela */
         flex-direction: column;
-        gap: 1rem;
+        gap: 1.5rem;
         padding: 1.5rem 1rem;  /* Padding maior para melhor toque */
         margin-bottom: 2rem;  /* Adiciona espaçamento após o header */
         box-shadow: 0 4px 20px rgba(212, 175, 0, 0.3);  /* Sombra amarela */
     }
     
     nav {
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 1rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;  /* 2 colunas fixas */
+        grid-template-rows: repeat(4, 1fr);  /* 4 linhas */
+        gap: 0.8rem;
+        width: 100%;
+        max-width: 400px;
+        margin: 0 auto;
     }
     
     nav a {
-        padding: 0.8rem 1.2rem;  /* Padding maior para melhor toque em mobile */
-        font-size: 1rem;  /* Tamanho de fonte ligeiramente maior */
+        padding: 1rem 0.8rem;  /* Padding melhorado para toque */
+        font-size: 0.9rem;  /* Fonte legível */
+        font-weight: 600;  /* Texto mais destacado */
         color: #ffffff;  /* Cor branca para contraste com fundo escuro */
-        background: rgba(212, 175, 0, 0.1);  /* Fundo sutil amarelo */
-        border: 1px solid #d4af00;  /* Borda amarela */
-        margin: 0.2rem;  /* Espaçamento entre links */
+        background: rgba(212, 175, 0, 0.15);  /* Fundo sutil amarelo mais visível */
+        border: 2px solid #d4af00;  /* Borda amarela mais destacada */
+        border-radius: 12px;  /* Bordas bem arredondadas */
+        text-align: center;
+        transition: all 0.3s ease;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 48px;  /* Altura mínima para toque confortável */
+        text-decoration: none;
+        cursor: pointer;
     }
     
     nav a:hover {
-        background: #d4af00;
+        background: linear-gradient(135deg, #d4af00, #ffcc00);
         color: #000000;  /* Cor preta no hover para contraste com fundo dourado */
+        transform: translateY(-2px);
+        box-shadow: 0 4px 12px rgba(212, 175, 0, 0.4);
+        border-color: #ffcc00;
     }
     
     main {
@@ -792,11 +808,20 @@ footer .contato a:hover .social-icon {
     .SobreNos {
         flex-direction: column;
         text-align: center;
-        gap: 2rem;
+        gap: 1.5rem;
+        padding: 1rem;
     }
     
     .SobreNos .texto-sobre {
         transform: translateY(30px);
+        padding: 1rem;
+    }
+    
+    .SobreNos .texto-sobre p {
+        font-size: 0.85rem;
+        line-height: 1.4;
+        text-align: left;
+        margin-bottom: 1rem;
     }
     
     .section-visible .SobreNos .texto-sobre {
@@ -805,12 +830,21 @@ footer .contato a:hover .social-icon {
     
     .SobreNos .texto-sobre h2 {
         text-align: center;
+        font-size: 1.4rem;
+        margin-bottom: 1rem;
     }
     
     .SobreNos .imagem-sobre {
         flex: none;
         order: -1;
         transform: translateY(-30px) scale(0.9);
+        max-width: 100%;
+    }
+    
+    .SobreNos .imagem-sobre img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 12px;
     }
     
     .section-visible .SobreNos .imagem-sobre {
@@ -925,11 +959,16 @@ footer .contato a:hover .social-icon {
     }
     
     h1 {
-        font-size: 2rem;
+        font-size: 1.7rem;
     }
     
     h2 {
-        font-size: 1.5rem;
+        font-size: 1.3rem;
+    }
+    
+    p {
+        font-size: 0.9rem;
+        line-height: 1.5;
     }
     
     /* Melhorias para WhatsApp em mobile */
@@ -1740,31 +1779,68 @@ html {
 @media (max-width: 768px) {
     .localizacao-info {
         grid-template-columns: 1fr;
-        gap: 2rem;
-        margin-top: 2rem;
+        gap: 1.5rem;
+        margin-top: 1.5rem;
     }
     
     .map iframe {
         width: 100%;
-        height: 300px;
+        height: 250px;
     }
     
     .info-principal h3 {
-        font-size: 1.3rem;
+        font-size: 1.1rem;
+        margin-bottom: 0.8rem;
+    }
+    
+    .info-principal p {
+        font-size: 0.85rem;
+        line-height: 1.4;
+        margin-bottom: 1rem;
     }
     
     .endereco-completo {
-        padding: 1.2rem;
+        padding: 1rem;
+        margin-top: 1rem;
+    }
+    
+    .endereco-detalhes p {
+        font-size: 0.8rem;
+        margin: 0.2rem 0;
     }
     
     .vantagens-localizacao {
-        padding: 1.5rem;
+        padding: 1rem;
     }
     
     .vantagens-localizacao h4 {
-        font-size: 1.2rem;
-        flex-direction: column;
-        gap: 0.3rem;
+        font-size: 1rem;
+        margin-bottom: 0.8rem;
+    }
+    
+    .vantagens-localizacao ul {
+        margin: 0.8rem 0;
+    }
+    
+    .vantagens-localizacao li {
+        font-size: 0.8rem;
+        margin: 0.3rem 0;
+        line-height: 1.3;
+    }
+    
+    .horario-atendimento {
+        margin-top: 1rem;
+        padding: 0.8rem;
+    }
+    
+    .horario-atendimento h5 {
+        font-size: 0.9rem;
+        margin-bottom: 0.5rem;
+    }
+    
+    .horario-atendimento p {
+        font-size: 0.8rem;
+        margin: 0.2rem 0;
     }
     
     /* Hero Section Mobile */
@@ -1778,18 +1854,18 @@ html {
     /* Ajuste específico para celular na vertical (portrait) */
     @media (max-width: 768px) and (orientation: portrait) {
         .hero-section::before {
-            background-size: auto 150%;
+            background-size: auto 100%;
             background-position: center center;
-            opacity: 0.18;
+            opacity: 0.08;
         }
     }
     
     /* Ajuste específico para celular na horizontal (landscape) */
     @media (max-width: 768px) and (orientation: landscape) {
         .hero-section::before {
-            background-size: 100% auto;
+            background-size: 80% auto;
             background-position: center center;
-            opacity: 0.12;
+            opacity: 0.06;
         }
     }
     
