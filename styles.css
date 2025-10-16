@@ -1153,6 +1153,13 @@ footer .contato a:hover .social-icon {
     margin-bottom: 0.8rem;
   }
 
+  /* Imagens específicas maiores em mobile */
+  .cliente-card .graneleiro-logo,
+  .cliente-card .frota-brasil-logo {
+    width: 90px;
+    height: 70px;
+  }
+
   .cliente-card h3 {
     font-size: 1.1rem; /* Título menor */
     margin-bottom: 0.8rem;
@@ -1407,6 +1414,14 @@ html {
 
 .cliente-card:hover img {
   opacity: 1;
+}
+
+/* Imagens específicas que precisam ser maiores */
+.cliente-card .graneleiro-logo,
+.cliente-card .frota-brasil-logo {
+  width: 120px;
+  height: 90px;
+  object-fit: contain;
 }
 
 .cliente-card h3 {
